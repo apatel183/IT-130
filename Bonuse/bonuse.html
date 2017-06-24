@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Brick Oven Pizza Chicago</title>
+	<script type="text/javascript">		
+		function confirmOrder()
+		{
+		var name, size, address;
+		name=document.order.fullName.value;
+		address=document.order.homeAddress.value;
+		size=document.order.pizzaSize.value;
+
+		document.write("Hello, " + name + ".  This is your order confirmation: " +  "You ordered a $" + size + " pizza" + ".  " +" It will be delivered to " + address + " within 30 minutes today." );
+		}
+
+</script>
+
+<style type="text/css">
+#maincontent 
+{ 
+	border:5px dotted black; 
+	width:400px; 
+	padding:10px;  
+}	
+</style>
+</head> 
+
+
+	<body style="background-color:#CC3333">
+	<div id="header" style="text-align:center; color:#000066; font-family:verdana; font-style:italic; font-size:150%; border-style:dotted;
+	border-color:#00008B;">
+	<h1>Chicago's Best Brick Oven Pizza</h1>
+	<img src="pizza-slice.jpg" alt="Delicious Slice of Pizza" /><br>
+	</div>
+
+	<div id="maincontent">
+	<form name="order" style="text-align:center">
+	<p> Order your pizza for delivery now:</p>
+	<p>Full Name <input type="text" name="fullName"  style="background-color:#CCCC99"/></p>
+	<p>Address <input type="text" name="homeAddress" style="background-color:#CCCC99" /></p> 
+	<p><select name="pizzaSize" style="color:yellow; background-color:#63B8FF; fontsize:110%">
+	<option value="6">Small $6</option>
+	<option value="9">Medium $9</option>
+	<option value="11">Large $11</option>
+	<option value="13">Extra Large $13</option>
+	</select></p>
+<br>
+<br>
+	<input type="button" value="Confirm Order" style="color:yellow; background-color:#63B8FF; font-size:110%" onclick="confirmOrder()" />
+<br>	
+</form>
+</div>
+<div id="footer" style="text-align:center; color:#00008B; font-family:verdana; font-style:italic; font-size:75%; border-style:dotted 
+; border-color:#00008B"><br>
+Brick Oven Pizza <br>
+1900 Pennsylvania Avenue<br>
+Washington, D.C.
+</div>
+
+
+<br>
+</body>
+</html>

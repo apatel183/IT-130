@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+	<meta charset= "utf-8"/>
+	<title>Patel's Pizza</title>
+	<script type="text/javascript">
+		function doStuff()
+		{document.write("Thank you for order!");}
+	</script>
+</head>
+<body>
+	<div id ="Header">
+	<h1> Patel's Pizza</h1>
+	<h2> MAKE IT GREAT!</h2>
+	<img src="Pizza.jpeg" alt="Pizza" width="" height="300">
+	</div>
+	<div id="main_content">
+	<form name ="Pizza">
+		<p>Name: <input type="text" id="Name:"></p>
+		<p>Phone: <input type="text" name="Phone"></p>
+		
+		
+		Size:<br>
+		<select value ="selsize">
+		<option value="10"> Small ($10) </option>
+		<option value="13"> Medium ($13) </option>
+		<option value="16"> Large ($16) </option>
+		</select>
+		
+		<p> Toppings:</p>
+		<p>Mushrooms<input type="checkbox" name="chkmushrooms"/></p>
+		<p>Olives<input type="checkbox" name="chkolives"/></p>
+		<p>Sausage<input type ="checkbox" name="chksausage"/></p>
+		
+		<p>Speical requests: <textarea name="txttarComments" cols="25" rows="5"> </textarea></p>
+		
+		Would you like to be added to our e-mailing list?<br>
+			Yes <input type="radio" name="radTerms" checked/> <br>
+			No	<input type="radio" name="radTerms"/><br>
+		<p><input type="button" value="Submit My Order!" onclick="doStuff()"/></p>
+		
+	</form>
+		
+	</div>
+	<div id="footer">
+		<h5><p>
+				Address: 8800 N Patel Ave
+				Niles, IL-60714 
+			    Phone: 847-999-9912 </p></h5>
+		
+		
+	</div>
+</body>
+</html>

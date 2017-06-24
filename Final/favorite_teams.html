@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Forms Demo Read/Write Radio</title>
+	<script type="text/javascript">
+	
+	function getRadioCheckedValue()
+	{
+	var oRadio;
+	if (document.practice.radChoice[0].checked)
+	{
+		oRadio=document.practice.radChoice[0].value;
+	}
+	else if (document.practice.radChoice[1].checked)
+	{
+		oRadio=document.practice.radChoice[1].value;
+	}
+	else if (document.practice.radChoice[2].checked)
+	{
+		oRadio=document.practice.radChoice[2].value;
+	}
+	else if (document.practice.radChoice[3].checked)
+	{
+		oRadio=document.practice.radChoice[3].value;
+	}
+	else 
+		{
+			alert("Please Choose One");
+		}
+	
+			document.write("Your Club of Choice is: " + oRadio);
+		
+	}
+	</script>
+</head>
+<body>
+
+	<form name="practice">
+		
+		<p>Who do you prefer?</p>
+		<p><input type="radio" name="radChoice" value="Cubs">Cubs: </p>
+		<p><input type="radio" name="radChoice" value="Sox">Sox: </p>
+		<p><input type="radio" name="radChoice" value="Bears">Bears: </p>
+		<p><input type="radio" name="radChoice" value="Fire">Fire: </p>
+		<p><input type="button" value="Go" onclick="getRadioCheckedValue()"></p>
+	</form>
+</body>
+</html>

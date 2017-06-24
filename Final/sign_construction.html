@@ -1,0 +1,55 @@
+
+<!DOCTYPE html> 
+
+<html>
+  <head>
+    <title>Sign Page</title>
+      <script type="text/javascript">
+	  function Create()
+	  {
+		var word; 
+		
+		
+		word = document.getElementById("itemBox").value;
+		
+		if(document.getElementById("plainChoice").checked)
+		{
+			document.getElementById("signArea").innerHTML = "" + word.toUpperCase() + " on sale here!";
+		}
+		
+		else if (document.getElementById("boldChoice").checked)
+		{
+			document.getElementById("signArea").innerHTML = "" + word.toUpperCase().bold() + " on sale here!";
+		}
+		
+		else if(document.getElementById("italChoice").checked)
+		{
+			document.getElementById("signArea").innerHTML = "" + word.toUpperCase().italics() + " on sale here!";
+		}
+	  }
+
+      </script>
+  </head>
+
+
+  <body>
+    <h1>Sign Construction</h1>
+
+    <p>Sale Item: <input type="text" value="" id="itemBox"
+          size="20"/></p>
+    
+    <p>Display style:<br />
+      <input type="radio" name="style" id="plainChoice"
+        checked="true">Plain<br />
+      <input type="radio" name="style" id="boldChoice">Bold<br/>
+      <input type="radio" name="style" id="italChoice">Italics<br />
+    </p>
+
+    <input type="button" value="Show Sign"  onClick="Create(); " />
+    
+    <h2>Posted sign:</h2>
+    <p id="signArea">
+	</p>
+    
+  </body>
+</html>

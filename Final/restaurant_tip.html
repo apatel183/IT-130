@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Restaurant TiP</title>
+	<script type="text/javascript">
+	
+		function restaurantTip()
+		{
+			var dollars,tip,total,overallcost;
+			dollars= document.restaurant_tip.txtTip.value;
+			dollars = parseInt(dollars);
+			tip=document.restaurant_tip.serviceLevel.value;	
+			tip = parseInt(tip)
+			total=dollars*(tip/100);
+			overallcost=(dollars+total);
+			document.write("Thanks for tipping my employess.  You are paying $" + total + " tips. After the tips  overall cost is $" + overallcost + ".");		
+		}
+	</script>
+</head>
+
+<body>
+
+	<form name="restaurant_tip">
+		<p>Restaurant Bill in $ <input type="text" name="txtTip" id="dinnerBill" /></p>
+		<p>Service Quality?</p>
+		<select name="serviceLevel" id="tipChoice">
+			<option value="0">Terrible(0%)</option>
+			<option value="5">Poor(5%)</option>
+			<option value="10">Good(10%)</option>
+			<option value="15">Very Good(15%)</option>
+			<option value="20">Excellent(20%)</option>
+			<option value="25">Outstanding(25%)</option>
+		</select>
+		
+		<p><input type="button" value="Tip and Total"     onclick="restaurantTip()"></p>
+	</form>
+</body>
+</html>

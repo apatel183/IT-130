@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Restaurant Discount</title>
+	<script type="text/javascript">
+	
+		
+		function restaurantOrder()
+		{
+			var entreinput, drinkinput, FullName, total, finalcost;
+			var discountpct = 0;
+			FullName = document.restaurant_menu.txtFirstName.value;
+			
+			entreinput = document.restaurant_menu.entreChoice.value;		
+			drinkinput = document.restaurant_menu.drinkChoice.value;
+			
+			
+			drinkinput = parseFloat(drinkinput);
+			entreinput = parseFloat(entreinput);
+			
+			
+			if ((entreinput=="25" || entreinput=="10" ) && (drinkinput=="5"))
+			{
+				discountpct=5;
+			}
+			if ((entreinput=="20" || entreinput=="15") && (drinkinput=="1"))
+			{
+				discountpct=5;
+			}
+			if ((entreinput=="20") && (drinkinput=="5"))
+			{
+				discountpct=5;
+			}
+			if ((entreinput=="10" || entreinput=="25" ) && (drinkinput=="3"))
+			{
+				discountpct=5;
+			}
+			if ((entreinput=="20") && (drinkinput=="5"))
+			{
+				discountpct=5;
+			}
+			total = (entreinput+drinkinput);
+			total = parseFloat(total);
+			
+			
+			finalcost = (total-discountpct);
+	
+			document.write("Thank you come again! " + FullName + ". Your total cost before discount is $" + total + ". You get discount $" + discountpct + ". Your final cost after the discount is $" + finalcost + ".");
+		}
+	</script>
+</head>
+<body>
+
+	<form name="restaurant_menu">
+		<p>Name? <input type="text" id="tfn" name="txtFirstName" /></p>
+		<p>Entre Choice:</p>
+		<select name="entreChoice">
+			<option value="25">Steak ($25)</option>
+			<option value="20">Chicken Kiev($20)</option>
+			<option value="10">Hamburger($10)</option>
+			<option value="5">Caesar Salad($15)</option>
+		</select>
+		
+		<p>Drink Choice:</p>
+		<select name="drinkChoice">
+			<option value="0">Nothing</option>
+			<option value="5">Red Wine ($5)</option>
+			<option value="5">White Wine($5)</option>
+			<option value="3">Coke($3)</option>
+			<option value="3">Beer($3)</option>
+			<option value="1">Water($1)</option>
+		</select>
+		
+		<p><input type="button" value="Submit Order" onclick="restaurantOrder()"></p>
+	</form>
+	
+</body>
+</html>
+
+
+	

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+	<meta charset= "utf-8"/>
+	<title>Patel's Pizza</title>
+	<script type="text/javascript" src="patelpizzaexternal.js">		
+	</script>
+</head>
+<body>
+	<div id ="Header">
+	<h1> Patel's Pizza</h1>
+	<h2> MAKE IT GREAT!</h2>
+	<img src="Pizza.jpeg" alt="Pizza" width="" height="300">
+	</div>
+	<div id="main_content">
+	<form name ="Pizza">
+		<p>Last Name: <input type="text" name="Lname"></p>
+		<p>First Name: <input type="text" name="Fname"></p>
+		<p>Street Address: <input type="text" name="usaddress"></p>
+		<p>City: <input type="text" name="uscity"></p>
+		<p>State: <input type="text" name="ussate"></p>
+		<p>Zip Code: <input type="text" name="uszip"></p>
+		<p>E-mail: <input type="text" name="txtMail"></p>
+		<p>Phone Number: <input type="text" name="usPhone"></p>
+		
+		
+		<p>Size:
+		<select name = "size" id = "choicesize" >
+		<option value="6"> Personal ($6) </option>
+		<option value="9"> Medium ($9) </option>
+		<option value="12"> Large ($12) </option>
+		<option value="16"> Extra Large ($16) </option>
+		</select>
+		</p>
+		
+		<p> Drinks ($1 each):
+		<select name= "drink" id ="choicedrink">
+		<option value ="0"> 0 Drink </option>
+		<option value ="1"> 1 Drink </option>
+		<option value ="2"> 2 Drinks </option>
+		<option value ="3"> 3 Drinks </option>
+		<option value ="4"> 4 Drinks </option>
+		</select>
+		</p>
+		
+		<p> Desserts ($3 each):
+		<select name="dessert" id ="choicedessert">
+		<option value ="0"> 0 Dessert </option>
+		<option value ="3"> 1 Dessert </option>
+		<option value ="6"> 2 Desserts </option>
+		<option value ="9"> 3 Desserts</option>
+		<option value ="12"> 4 Desserts </option>
+		</select>
+		</p>
+		
+		
+		<p> Toppings:</p>
+		<p>Mushrooms<input type="checkbox" name="chkmushrooms"/></p>
+		<p>Olives<input type="checkbox" name="chkolives"/></p>
+		<p>Sausage<input type ="checkbox" name="chksausage"/></p>
+		
+		<p>Speical requests: <textarea name="txttarComments" cols="25" rows="5"> </textarea></p>
+		
+		Would you like to be added to our e-mailing list?<br>
+			Yes <input type="radio" name="radTerms" checked/> <br>
+			No	<input type="radio" name="radTerms"/><br>
+		<p><input type="button" value="Submit My Order!" onclick="readForm()"/></p>
+		
+	</form>
+		
+	</div>
+	<div id="footer">
+		<h5><p>
+				Address: 8800 N Patel Ave
+				Niles, IL-60714 
+			    Phone: 847-999-9912 </p></h5>
+		
+		
+	</div>
+</body>
+</html>

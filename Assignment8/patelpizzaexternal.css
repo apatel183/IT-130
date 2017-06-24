@@ -1,0 +1,34 @@
+body
+		{
+			background-color: #FFE4C4;
+		}
+		form 
+		{
+			border: 3px solid #FF0000;
+			width: 300px;
+			background-color: #00FFFF;
+		}
+		#Header
+		{
+			text-align:center;
+			color:#0000FF;
+		}
+		#footer
+		{
+			border:3px solid #FF0000;
+			border-color:#FF0000;
+			width:300px;
+			background-color:#48D1CC;
+			font-family: Arial;
+			font-style: italic;
+			
+		}
+		.buttoncolor
+		{
+			font-size: 13px;
+			color:#FFFF00;
+			background-color:#0000FF;
+		}
+		
+		
+		

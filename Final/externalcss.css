@@ -1,0 +1,43 @@
+		body
+		{
+			background-color: #0000FF;
+		}
+		p	 
+		{
+			color:#FF0000;
+			
+		}
+		h6
+		{
+			
+			color:#FFFFFF;
+		}
+
+		h1
+		{
+			color:#FFFFFF;
+		}
+
+		header
+		{
+			text-align:center;
+			
+		}
+		#maincontent
+		{
+				font-size:150%;
+		}
+		#tagline
+		{
+			text-align:center;
+			border: 3px solid #00ffff;
+			width: 300px;
+		}
+		footer
+		{
+			border:3px solid;
+			border-color:#000000;
+			text-align:center;
+			font-family:Arial;
+		}
+		

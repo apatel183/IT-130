@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	
+	<title>Currency Convert</title>
+	
+		<script type="text/javascript">
+		
+			function USDtoEuros()
+				{
+				
+				var USDDollars;
+				USDDollars=document.convert.usDollars.value;
+				Euros = USDDollars * .76;
+				document.write("For " + "&#36;" + USDDollars + " US Dollars, you will get " + "&#8364;" + Euros + " Euros.");
+				
+				}
+		
+			function USDtoBritishPounds()
+				{
+				
+				var USDDollars;
+				USDDollars=document.convert.usDollars.value;
+				Pounds = USDDollars * .62;
+				document.write("For " + "&#36;" + USDDollars + " US Dollars, you will get " + "&pound;" + Pounds + " British Pounds.");
+				
+				}
+			function USDtoMexicanPesos()
+				{
+				
+				var USDDollars;
+				USDDollars=document.convert.usDollars.value;
+				MexicanPesos = USDDollars * 13.23;
+				document.write("For " + "&#36;" + USDDollars + " US Dollars, you will get " + "&#8369;" + MexicanPesos + " Mexican Pesos.");
+				
+				}
+		</script>
+</head>
+
+<body>
+		<div id="header">
+			
+			<h1>Currency Converter!</h1>
+			
+			<img src="thumb.jpeg" alt="moneylogo" width="250" height="250">
+		</div>
+		<div id="maincontent">
+			
+			<form name="convert">
+			
+				<p>U.S. &#36; <input type="text" name="usDollars"/></p>
+				
+				<p>Convert to Euros <input type="button" value="Go" onclick="USDtoEuros()"/></p>
+				
+				<p>Convert to British Pounds <input type="button" value="Go" onclick="USDtoBritishPounds()"/></p>
+				
+				<p>Convert to Mexican Pesos <input type="button" value="Go" onclick="USDtoMexicanPesos()"/></p>
+			
+			</form>
+		</div>
+</body>
+</html>
+			
